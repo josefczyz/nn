@@ -11,8 +11,8 @@ def sigmoid_derivative(x):
 inputs = np.array([[0,0],[0,1],[1,0],[1,1]])
 expected_output = np.array([[0],[1],[1],[0]])
 
-epochs = 10000
-lr = 0.1
+epochs = 4000
+lr = 0.2
 inputLayerNeurons, hiddenLayerNeurons, outputLayerNeurons = 2,2,1
 
 #Random weights and zeroing bias initialization
@@ -64,5 +64,5 @@ print(output_weights)
 print("Final output bias: ",end='')
 print(output_bias)
 
-print("\nOutput from neural network after 10,000 epochs: ",end='')
+print("\nOutput from neural network after:",epochs," epochs: ")
 print(predicted_output)
